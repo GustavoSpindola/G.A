@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>G.A. Projetos e Móveis Planejados</title>
+<meta name="description" content="G.A. Projetos e Móveis Planejados: ambientes que acompanham cada fase. Conheça nossos projetos e solicite um orçamento.">
+<meta property="og:title" content="G.A. Projetos e Móveis Planejados">
+<meta property="og:description" content="Transformamos ambientes em experiências de vida.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0f2a1e;--gold:#b8935a;--gold-t:#8a6a35;--bg:#f1ebdf;--bg2:#e8e0d0;--ink:#1d1d19;--mut:#5d5a50;--line:rgba(29,29,25,.15);
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--gold-t:#c9a468;--bg:#0b1710;--bg2:#102016;--ink:#efe8da;--mut:#b4ae9f;--line:rgba(239,232,218,.16)}}
+:root[data-theme="dark"]{--gold-t:#c9a468;--bg:#0b1710;--bg2:#102016;--ink:#efe8da;--mut:#b4ae9f;--line:rgba(239,232,218,.16)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font:300 1.05rem/1.7 var(--sans)}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0}
+h2{font-size:clamp(2rem,4.6vw,3.4rem)}
+em{color:var(--gold-t)}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4.5rem,9vw,8rem) 0}
+.eyebrow{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-t);margin:0 0 1.2rem}
+.eyebrow::before{content:"";display:inline-block;width:2.2rem;height:1px;background:currentColor;vertical-align:middle;margin-right:.9rem}
+.hero,.gal,.cta{--gold-t:#c9a468}
+.svc,.dif{counter-reset:n}.svc article,.dif div{counter-increment:n}
+.svc article::before,.dif div::before{content:"0" counter(n);display:block;font:500 1.15rem var(--serif);letter-spacing:.2em;color:var(--gold-t);margin-bottom:.9rem}
+.btn{display:inline-block;padding:.95rem 1.8rem;font:500 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);color:#f1ebdf;background:transparent;cursor:pointer;transition:background .3s,color .3s}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:var(--g)}
+.btn.solid{background:var(--gold);color:var(--g)}
+.btn.solid:hover,.btn.solid:focus-visible{background:#d0aa6c}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:linear-gradient(rgba(15,42,30,.85),rgba(15,42,30,0));color:#f1ebdf;transition:background .4s}
+header.scrolled{background:rgba(15,42,30,.96);backdrop-filter:blur(8px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:4.5rem}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;font:600 1.5rem var(--serif);letter-spacing:.05em}
+.brand img{width:52px;height:52px;border-radius:50%}
+.bt{font:400 .62rem/1.5 var(--sans);letter-spacing:.24em;text-transform:uppercase}
+nav ul{display:flex;gap:clamp(1rem,2vw,2rem);list-style:none;margin:0;padding:0;align-items:center}
+nav a{white-space:nowrap;text-decoration:none;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;transition:color .3s}
+nav a:hover{color:var(--gold)}
+nav .btn{padding:.7rem 1.2rem}
+.burger{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:1.5px;background:currentColor;margin:6px auto;transition:transform .3s,opacity .3s}
+.hero{background:var(--g);color:#f1ebdf;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:100svh;padding:0}
+.hero .txt{align-self:center;padding:8rem clamp(1.5rem,5vw,5rem) 4rem max(1.5rem,calc((100vw - 1120px)/2))}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.8rem)}
+.hero p.sub{max-width:34rem;margin:1.6rem 0 2.4rem;color:rgba(241,235,223,.8)}
+.hero .acts{display:flex;flex-wrap:wrap;gap:1rem}
+.hero figure{margin:0;display:grid;place-items:center;padding:7rem clamp(2rem,5vw,5rem) 4rem 0}
+.hero .fr{position:relative;width:min(100%,430px);aspect-ratio:4/5.2}
+.hero .fr::before{content:"";position:absolute;inset:1.1rem -1.1rem -1.1rem 1.1rem;border:1px solid var(--gold)}
+.hero .fr img{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.head{max-width:40rem;margin-bottom:3.5rem}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem}
+.g1{grid-column:span 4}.g2{grid-column:span 4;margin-top:4rem}.g3{grid-column:span 4}.g5{grid-column:span 12;text-align:center;padding:3.5rem 0 0}
+.shot{padding:0;border:0;background:var(--bg2);cursor:zoom-in;overflow:hidden;display:block;width:100%}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.shot:hover img,.shot:focus-visible img{transform:scale(1.04)}
+.g1 .shot,.g2 .shot,.g3 .shot{aspect-ratio:3/4.3}.g4 .shot{aspect-ratio:4/3.4}
+.g5 h3{font-size:clamp(1.8rem,3.4vw,2.6rem)}
+.gal{background:var(--g);color:#f1ebdf}
+.gh{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.gh .head{margin:0}
+.ctl{display:flex;gap:.6rem}
+.ctl button{width:48px;height:48px;border:1px solid var(--gold);background:transparent;color:#f1ebdf;font-size:1.3rem;cursor:pointer;transition:background .3s,color .3s}
+.ctl button:hover:not(:disabled){background:var(--gold);color:var(--g)}
+.ctl button:disabled{opacity:.35;cursor:default}
+.trk{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0 0 1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.trk li{flex:0 0 calc((100% - 2.4rem)/3);scroll-snap-align:start;min-width:0}
+.trk .shot{aspect-ratio:4/5}
+.trk p{margin:.9rem 0 0;font:500 1.3rem var(--serif)}
+@media (max-width:860px){.trk li{flex-basis:calc((100% - 1.2rem)/2)}}
+@media (max-width:520px){.trk li{flex-basis:85%}}
+.alt{background:var(--bg2)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2.5rem}
+.svc article{border-top:1px solid var(--gold);padding-top:1.4rem}
+.svc h3{font-size:1.7rem;margin-bottom:.6rem}
+.svc p,.dif p{color:var(--mut);margin:0}
+.note{margin-top:2.5rem;font-size:.9rem;color:var(--mut)}
+.dif{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+.dif div{padding-left:1.2rem;border-left:1px solid var(--line)}
+.dif h3{font-size:1.4rem;margin-bottom:.5rem}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.about img{width:100%;max-width:440px;justify-self:center;aspect-ratio:4/5;object-fit:cover}
+.about p{color:var(--mut)}
+.cta{background:var(--g);color:#f1ebdf}
+.cta-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem)}
+.cta p{color:rgba(241,235,223,.8)}
+form{display:grid;gap:1.1rem}
+label{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;display:grid;gap:.4rem}
+input,select,textarea{font:300 1rem var(--sans);padding:.85rem 1rem;background:rgba(241,235,223,.06);border:1px solid rgba(241,235,223,.3);color:#f1ebdf;border-radius:0;width:100%}
+select option{color:#1d1d19}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#e08a7a}
+.err{color:#f0a898;font-size:.82rem;letter-spacing:0;text-transform:none;min-height:1em}
+footer{background:#0a1c13;color:#d8d1c1;padding:3.5rem 0 2rem;font-size:.92rem}
+footer .row{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:center}
+footer ul{display:flex;flex-wrap:wrap;gap:1.5rem;list-style:none;padding:0;margin:0}
+footer a{text-decoration:none}footer a:hover{color:var(--gold)}
+footer small{display:block;margin-top:2rem;opacity:.65}
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,900px);max-height:92vh;overflow:visible}
+dialog::backdrop{background:rgba(5,12,8,.88)}
+dialog img{max-height:86vh;width:auto;margin:auto}
+dialog button{position:absolute;top:-2.6rem;right:0;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:1024px){
+.burger{display:block}
+nav{position:absolute;top:100%;left:0;right:0;background:#0f2a1e;display:none;padding:1.2rem 1.5rem 2rem}
+nav.open{display:block}nav ul{flex-direction:column;align-items:flex-start;gap:1.3rem}
+}
+@media (max-width:860px){
+.hero{grid-template-columns:1fr}.hero figure{order:-1;padding:6.5rem 2.2rem 1rem 1.5rem}.hero .txt{padding:2.5rem 1.5rem 3.5rem}
+.g1,.g2,.g3,.g4{grid-column:span 6}.g2{margin-top:0}.g5{grid-column:span 12;padding:1rem 0 0}.g4{grid-column:span 12}
+.about,.cta-in{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){.g1,.g2,.g3{grid-column:span 12}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.shot img{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#inicio" aria-label="G.A. Projetos e Móveis Planejados, início"><img src="img/logo.png" alt="Logotipo G.A." width="52" height="52"><span class="bt">Projetos e<br>Móveis planejados</span></a>
+<button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+<nav id="menu" aria-label="Principal"><ul>
+<li><a href="#inicio">Início</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li>
+<li><a class="btn solid wa" href="#contato">Solicitar orçamento</a></li>
+</ul></nav>
+</div>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="txt">
+<p class="eyebrow">Projetos e móveis planejados</p>
+<h1>Móveis sob medida para <em>transformar</em> seus ambientes.</h1>
+<p class="sub">Projetos personalizados que unem design, funcionalidade e acabamento de qualidade para criar espaços que combinam com você.</p>
+<div class="acts"><a class="btn" href="#projetos">Conheça nossos projetos</a><a class="btn solid" href="#contato">Solicite um orçamento</a></div>
+</div>
+<figure><div class="fr"><img src="img/quarto.jpg" alt="Quarto planejado com cabeceira azul-marinho, nichos, escrivaninha e iluminação em LED" width="460" height="944" fetchpriority="high"></div></figure>
+</section>
+
+<section id="projetos">
+<div class="wrap">
+<div class="head rv"><p class="eyebrow">Projetos realizados</p><h2>Detalhes que transformam <em>experiências.</em></h2></div>
+<div class="grid">
+<div class="g1 rv"><button class="shot" data-full="img/quarto.jpg" aria-label="Ampliar: quarto planejado"><img src="img/quarto.jpg" id="img-quarto" alt="Quarto planejado com cama com baú, nichos iluminados e escrivaninha" loading="lazy"></button></div>
+<div class="g2 rv"><button class="shot" data-full="img/area-externa.jpg" aria-label="Ampliar: área externa"><img src="img/area-externa.jpg" id="img-pergola" alt="Área externa com pérgola de madeira, brise ripado e móveis de fibra" loading="lazy"></button></div>
+<div class="g3 rv"><button class="shot" data-full="img/cozinha.jpg" aria-label="Ampliar: cozinha planejada"><img src="img/cozinha.jpg" id="img-cozinha" alt="Cozinha planejada com bancada clara, armários em tom taupe e painel ripado com LED" loading="lazy"></button></div>
+<div class="g5 rv"><p class="eyebrow">Projeto entregue com excelência</p><h3>Ambientes que acompanham cada fase.</h3></div>
+</div>
+</div>
+</section>
+
+<section class="gal" id="galeria">
+<div class="wrap">
+<div class="gh rv"><div class="head"><p class="eyebrow">Galeria</p><h2>Exemplos de projetos <em>realizados.</em></h2></div>
+<div class="ctl"><button id="pv" aria-label="Projeto anterior">←</button><button id="nx" aria-label="Próximo projeto">→</button></div></div>
+<ul class="trk" id="trk" tabindex="0" aria-label="Galeria de projetos realizados"></ul>
+</div>
+</section>
+
+<section class="alt" id="servicos">
+<div class="wrap">
+<div class="head rv"><p class="eyebrow">Serviços</p><h2>Cada ambiente, um <em>projeto</em>.</h2></div>
+<div class="svc rv">
+<article><h3>Cozinhas planejadas</h3><p>Marcenaria sob medida com bancadas, armários e painéis pensados para o seu dia a dia.</p></article>
+<article><h3>Dormitórios</h3><p>Camas, cabeceiras, nichos e áreas de estudo integrados ao espaço disponível.</p></article>
+<article><h3>Áreas externas</h3><p>Pérgolas e ambientes de convivência com atenção ao conforto e à iluminação.</p></article>
+<article><h3>Projetos personalizados</h3><p>Conte o que você precisa e conversamos sobre como transformar a ideia em projeto.</p></article>
+</div>
+<p class="note">Lista baseada nos projetos apresentados. Para incluir outros serviços (closets, salas, banheiros, escritórios), edite os blocos acima.</p>
+</div>
+</section>
+
+<section id="diferenciais">
+<div class="wrap">
+<div class="head rv"><p class="eyebrow">Por que sob medida</p><h2>Estética e funcionalidade, <em>juntas.</em></h2></div>
+<div class="dif rv">
+<div><h3>Aproveitamento do espaço</h3><p>Cada centímetro pensado para o ambiente real.</p></div>
+<div><h3>Personalização</h3><p>Projeto de acordo com o uso e o estilo de cada ambiente.</p></div>
+<div><h3>Design e função</h3><p>Beleza que também facilita a rotina.</p></div>
+<div><h3>Atenção aos detalhes</h3><p>Acabamentos, iluminação e proporções cuidados no projeto.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="sobre">
+<div class="wrap about">
+<img class="rv" src="img/quarto-nichos.jpg" alt="Nichos e escrivaninha de um dormitório planejado" loading="lazy">
+<div class="rv"><p class="eyebrow">Sobre</p><h2>Transformamos ambientes em <em>experiências de vida.</em></h2>
+<p style="margin-top:1.5rem">A G.A. Projetos e Móveis Planejados desenvolve projetos de móveis sob medida com foco em design, funcionalidade e acabamento.</p>
+<p><!-- Edite: insira aqui a história real da empresa. --></p></div>
+</div>
+</section>
+
+<section class="cta" id="contato">
+<div class="wrap cta-in">
+<div class="rv"><p class="eyebrow">Orçamento</p><h2>Vamos transformar seu projeto em <em>realidade?</em></h2>
+<p style="margin:1.5rem 0 2rem">Conte um pouco sobre o ambiente que você deseja transformar e entre em contato para conversar sobre seu projeto.</p>
+<a class="btn solid wa" href="#">Orçamento pelo WhatsApp</a></div>
+<form class="rv" id="f" novalidate>
+<label>Nome<input name="nome" autocomplete="name" required aria-describedby="e1"><span class="err" id="e1"></span></label>
+<label>Ambiente<select name="amb"><option>Cozinha</option><option>Dormitório</option><option>Área externa</option><option>Outro</option></select></label>
+<label>Mensagem<textarea name="msg" rows="4" required aria-describedby="e2"></textarea><span class="err" id="e2"></span></label>
+<button class="btn solid" type="submit">Enviar pelo WhatsApp</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap"><div class="row">
+<a class="brand" href="#inicio"><img src="img/logo.png" alt="" width="44" height="44">G.A. Projetos e Móveis Planejados</a>
+<ul><li><a href="#inicio">Início</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul>
+</div><small>© 2026 G.A. Projetos e Móveis Planejados. Todos os direitos reservados.<br>Desenvolvido por <strong>SPDVISUALS</strong></small></div>
+</footer>
+<dialog id="lb" aria-label="Imagem ampliada"><button aria-label="Fechar">×</button><img alt=""></dialog>
+<script>
+/* CONFIGURAÇÃO: número do WhatsApp com DDI+DDD, só dígitos (ex.: "5548999999999"). Vazio abre o WhatsApp para escolher o contato. */
+const WHATSAPP="";
+document.documentElement.classList.add("js");
+const wa=t=>"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t);
+document.querySelectorAll("a.wa").forEach(a=>{if(a.getAttribute("href")==="#"){a.href=wa("Olá! Gostaria de solicitar um orçamento de móveis planejados.");a.target="_blank";a.rel="noopener"}});
+const nav=document.getElementById("menu"),bg=document.querySelector(".burger");
+bg.onclick=()=>{const o=nav.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");bg.setAttribute("aria-expanded",false)}));
+const lb=document.getElementById("lb"),li=lb.querySelector("img");
+document.querySelectorAll(".shot").forEach(b=>b.onclick=()=>{li.src=b.dataset.full;li.alt=b.querySelector("img").alt;lb.showModal()});
+lb.addEventListener("click",e=>{if(e.target===lb||e.target.tagName==="BUTTON")lb.close()});
+/* GALERIA: para adicionar um projeto, inclua um item em PROJETOS.
+   src: caminho da imagem (ex.: "img/cozinha-02.jpg"); titulo: legenda; alt: descrição da foto. */
+const PROJETOS=[
+{src:"img/quarto-cama.jpg",titulo:"Dormitório · cama com baú e LED",alt:"Cama com baú e iluminação em LED em dormitório planejado"},
+{src:"img/cozinha-detalhe.jpg",titulo:"Cozinha · iluminação em LED",alt:"Detalhe da cozinha planejada com cortina e iluminação em LED"},
+{src:"img/pergola-lateral.jpg",titulo:"Pérgola · vista lateral",alt:"Pérgola de madeira com brise ripado e poltronas de fibra"},
+{src:"img/pergola-noite.jpg",titulo:"Pérgola · à noite",alt:"Detalhe da pérgola de madeira com iluminação, à noite"}
+];
+const trk=document.getElementById("trk"),pv=document.getElementById("pv"),nx=document.getElementById("nx");
+const mk=(t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e};
+PROJETOS.forEach(p=>{
+const src=p.src[0]==="#"?document.querySelector(p.src).src:p.src;
+const it=mk("li"),b=mk("button","shot"),im=mk("img"),cp=mk("p");
+b.setAttribute("aria-label","Ampliar: "+p.titulo);im.src=src;im.alt=p.alt||p.titulo;im.loading="lazy";cp.textContent=p.titulo;
+b.onclick=()=>{li.src=src;li.alt=im.alt;lb.showModal()};
+b.append(im);it.append(b,cp);trk.append(it)});
+const beh=matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth";
+const step=()=>{const f=trk.firstElementChild;return f?f.getBoundingClientRect().width+(parseFloat(getComputedStyle(trk).columnGap)||0):300};
+const upd=()=>{pv.disabled=trk.scrollLeft<=2;nx.disabled=trk.scrollLeft>=trk.scrollWidth-trk.clientWidth-2};
+pv.onclick=()=>trk.scrollBy({left:-step(),behavior:beh});
+nx.onclick=()=>trk.scrollBy({left:step(),behavior:beh});
+trk.addEventListener("scroll",upd,{passive:true});addEventListener("resize",upd);upd();
+const hd=document.querySelector("header"),sc=()=>hd.classList.toggle("scrolled",scrollY>40);addEventListener("scroll",sc,{passive:true});sc();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const f=e.target,n=f.nome,m=f.msg;
+const bad=(i,id,t)=>{const v=!i.value.trim();i.setAttribute("aria-invalid",v);document.getElementById(id).textContent=v?t:"";return v};
+const b1=bad(n,"e1","Informe seu nome."),b2=bad(m,"e2","Escreva uma breve mensagem.");
+if(b1||b2)return;
+window.open(wa("Olá! Meu nome é "+n.value.trim()+". Tenho interesse em: "+f.amb.value+". "+m.value.trim()),"_blank","noopener")});
+</script>
+</body>
+</html>
